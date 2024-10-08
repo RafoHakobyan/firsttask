@@ -26,13 +26,13 @@ function getTasks() {
             const tasks = JSON.parse(data).data; 
             const formattedTasks = tasks.map(task => ({
                 "id":task.id,
-                "title":task.name,
-                "accountld":task.assignee,
-                "importance":task.status,
-                "parentlds":task.collections,
-                "createdData":task.created_at,
-                "updatedData":task.updated_at,
-                "permalink":task.ticket_url
+                "name":task.title,
+                "assingnee":task.accountld,
+                "status":task.importance,
+                "collections":task.parentlds,
+                "created_at":task.createdDate,
+                "updated_at":task.updatedDate,
+                "ticket_url":task.permalink
 
 
 
